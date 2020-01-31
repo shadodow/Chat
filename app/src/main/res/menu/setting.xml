@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<item
+    android:id="@+id/itm1"
+    android:title="New group"/>
+    <item
+        android:id="@+id/itm2"
+        android:title="New brodcast"/>
+    <item
+        android:id="@+id/itm3"
+        android:title="WahatsApp web"/>
+    <item
+        android:id="@+id/itm4"
+        android:title="Starred messages" />
+    <item
+        android:id="@+id/itm5"
+        android:title="Setting"/>
+</menu>

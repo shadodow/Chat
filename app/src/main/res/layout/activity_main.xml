@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar"
+
+        >
+
+    </include>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="#00574B"
+        android:textAlignment="inherit"
+        android:textDirection="firstStrongRtl"
+        app:tabIndicator="@color/colorPrimaryDark"
+        app:tabIndicatorColor="#00574B"
+        app:tabSelectedTextColor="#00FCF5F5"
+        app:tabTextColor="#D6E6E6">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itm1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:icon="@drawable/ic_photo_camera_black_24dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chats" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/itm4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="calls" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp" >
+
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>
